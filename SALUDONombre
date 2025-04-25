@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class SaludoNombre {
+
+    public static void main(String[] args) {
+        // Creamos un objeto Scanner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
+
+        // Preguntamos el nombre al usuario
+        System.out.print("Por favor, introduce tu nombre: ");
+
+        // Leemos la línea de texto que el usuario introduce (su nombre)
+        String nombre = scanner.nextLine();
+
+        // Mostramos el saludo personalizado
+        System.out.println("¡Hola, " + nombre + "! ¡Un gusto conocerte!");
+
+        // Cerramos el Scanner para liberar recursos
+        scanner.close();
+    }
+}
